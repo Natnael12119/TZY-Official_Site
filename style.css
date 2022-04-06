@@ -12,7 +12,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
   transition: all 0.2s linear;
 }
 
@@ -106,8 +105,10 @@ header .navbar ul li a:hover {
 
 .navbar .current {
   background-color: rgb(119, 177, 204);
+  color: black;
 }
 
+/* home section */
 .home {
   min-height: 100vh;
   display: flex;
@@ -142,6 +143,8 @@ header .navbar ul li a:hover {
   color: #666;
   padding: 1rem 0;
 }
+
+/* about section */
 .about {
   background-color: linear-gradient(45deg, #ffffff, #693232);
   background-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(49, 13, 13));
@@ -167,7 +170,8 @@ header .navbar ul li a:hover {
 }
 
 .about .image img {
-  width: 90%;
+  width: 50rem;
+  height: auto;
 }
 
 .about .content {
@@ -201,6 +205,8 @@ header .navbar ul li a:hover {
 .more-text {
   display: none;
 }
+
+/* servis section */
 .service {
   min-height: 100vh;
   background: #f3f1f5;
@@ -262,14 +268,13 @@ h1 {
   width: 10rem;
 }
 
-/* contact form contact page starts */
-
-.contact {
-  background-color: linear-gradient(45deg, #ffffff, #c2c595);
+/* our-team section */
+.ourTeam {
+  background-color: linear-gradient(45deg, #ffffff, #9190d4);
   background-image: linear-gradient(
     45deg,
     rgb(255, 255, 255),
-    rgb(189, 197, 143)
+    rgb(72, 151, 165)
   );
   background-position-x: initial;
   background-position-y: initial;
@@ -280,75 +285,68 @@ h1 {
   background-origin: initial;
   background-clip: initial;
   background-color: initial;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.team {
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+  padding-top: 10rem;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
-.contact form {
-  flex: 1 1 40rem;
-  padding: 2rem;
-  margin: 1rem;
-  margin-top: 4rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
 }
 
-.contact .content {
-  flex: 1 1 40rem;
-  padding: 3rem 1rem;
+.profile {
+  flex-basis: 260px;
 }
 
-.contact form .box {
-  width: 100%;
-  background-color: rgb(226, 228, 213);
-  color: #333;
-  height: 4rem;
-  font-size: 1.7rem;
-  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
-  text-transform: none;
-  margin: 1rem 0;
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
 }
 
-.contact form .box::placeholder {
-  text-transform: capitalize;
+.profile:hover .profile-img {
+  filter: grayscale(0);
 }
 
-.contact form .box:focus {
-  border-color: var(--orange);
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
 }
 
-.contact form .message {
-  height: 15rem;
-  resize: none;
-}
-
-.contact .content h3 {
-  font-size: 4rem;
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
   color: #444;
 }
 
-.contact .content p {
-  font-size: 1.8rem;
-  color: #666;
-  padding: 1rem 0;
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #444;
 }
 
-.contact .content .icons {
-  font-size: 1.7rem;
-  color: #333;
-  padding: 0.7rem 0;
-}
-
-.contact .content .icons i {
-  padding-right: 0.5rem;
-  color: var(--orange);
-}
-/* contact form contact page ends */
-
-/* contact form of home page starts */
-
+/* Contact section */
 .contactUs {
   background-color: linear-gradient(45deg, #ffffff, #c2c595);
   background-image: linear-gradient(
@@ -367,19 +365,50 @@ h1 {
   background-color: initial;
   background-color: #f6e7d8;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 1rem;
+  gap: 1rem;
 }
+
+.contactUs .title {
+  position: relative;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.contactUs .title h1 {
+  color: rgb(78, 73, 73);
+  font-size: 5rem;
+}
+
+.contactUs .title p {
+  color: rgb(88, 80, 80);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contactUs h1 {
+  color: var(--white);
+  margin-top: 0;
+}
+
+.contactUs .map {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 41rem;
+  flex: 1 1 41rem;
+  width: 100%;
+}
+
 .contactUs form {
-  flex: 1 1 40rem;
-  padding: 2rem;
-  margin: 1rem;
-  margin-top: 2rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
-  width: 55vh;
+  -webkit-box-flex: 2;
+  -ms-flex: 1 1 41rem;
+  flex: 1 1 41rem;
+  background: var(--white);
+  padding: 1rem;
 }
 
 .contactUs .content {
@@ -391,7 +420,7 @@ h1 {
   width: 100%;
   background-color: rgb(226, 228, 213);
   color: #333;
-  height: 4rem;
+  height: 6rem;
   font-size: 1.7rem;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
   text-transform: none;
@@ -411,7 +440,7 @@ h1 {
   resize: none;
 }
 
-/* contact form of home page end */
+/* footer section */
 .footer {
   background: #333;
 }
@@ -436,6 +465,38 @@ h1 {
   font-size: 1.4rem;
   color: #eee;
   padding: 1rem 0;
+}
+
+.footer .box-container .address {
+  margin: 2rem;
+  flex: 1 1 20rem;
+}
+
+.footer .box-container .address h5 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.footer .box-container .address p {
+  font-size: 1.8rem;
+  color: #eee;
+  display: block;
+}
+
+.footer .box-container .contacts {
+  margin: 2rem;
+  flex: 1 1 20rem;
+}
+
+.footer .box-container .contacts h5 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.footer .box-container .contacts p {
+  font-size: 1.8rem;
+  color: #eee;
+  display: block;
 }
 
 .footer .box-container .box a {
@@ -465,6 +526,7 @@ h1 {
 .footer .credit a {
   color: var(--orange);
 }
+
 .social-icon ul {
   display: flex;
   position: relative;
@@ -598,5 +660,46 @@ h1 {
 
   section {
     padding-top: 5rem;
+  }
+  .footer .box-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
   }
 }

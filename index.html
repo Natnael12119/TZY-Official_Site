@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/
@@ -15,29 +14,29 @@
 </head>
 <body>
     
-<!-- header section starts  -->
+<!-- header section -->
 
 <header>
 
-    <h1 class="heading">Home</h1>
+    <h1 class="heading" style="display: none;">Home</h1>
 
     <div id="menu" class="fas fa-bars"></div>
 
     <nav class="navbar">
         <ul>
-            <li><a class="current" href="index.html">home</a></li>
-            <li><a href="about.html">about Us</a>
-            <li><a href="service.html">What We Do</a></li>
-            <li><a href="contact.html">contact</a></li>
-            <li><a href="team.html">Our Team</a></li>          
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a>
+            <li><a href="#service">What We Do</a></li>
+            <li><a href="#team">Our Team</a></li> 
+            <li><a href="#contact">contact Us</a></li>         
         </ul>
     </nav>
 
 </header>
 
-<!-- header section ends -->
 
-<!-- home section starts   -->
+
+<!-- home section -->
 
 <section class="home" id="home">
 
@@ -48,31 +47,32 @@
     </div>
 
     <div class="image">
-        <img src="heroImage.JPEG  " alt="">
+        <img src="/images/heroImage.JPEG  " alt="">
     </div>
 
 </section>
 
-<!-- home section ends -->
-
-<!-- about section starts -->
+<!-- about section -->
 <section class="about" id="about">
 
     <div class="image">
-        <img src="about.JPG" alt="">
+        <img src="/images/about.JPG" alt="">
     </div>
 
     <div class="content">
+
         <h1>a word about us</h1>
+
         <p>TZY Electromechanical and Electrical work contractor were established in 2006 E.C under Ethiopian commercial registration and business license. Proc no k/k AA/14/667/691555/2009 by Ethiopian nationals.</p>
-        <p>This company founded in Ethiopia by three Electrical Engineers, Those are TEKLAY HAILE, ZEKARIAS DAMTEW and YOHANNES TOLOSSA... </p>
-        <a href="about.html"><button class="btn">Read More</button></a>
+        <p>This company founded in Ethiopia by three Electrical Engineers, Those are TEKLAY HAILE, ZEKARIAS DAMTEW and YOHANNES TOLOSSA. All of them have good knowledge and experience on electrical and electromechanical works for instance in power concern works, Telecom project, building electrical installation and design, on different electromechanical works like Air conditioning installation, solar energy, pipe works, structure etc. Our purpose is to be leader in the electromechanical and electrical works by providing enhanced services relationship, profitability and turn knowledge in to value for benefit of our clients, government and people. Our company aims to provide client interest and keep loss of power EEPCO.</p>
+        <p>Our value determine how we behave, with client and each other, They define what we stand for and how we presume our activities helping us to work together in the most effective and fulfilling way. This enables us to create a strong organization culture constantly throughout the network.</p>
+         <br>
+        <a href="/company-profile/TZY COMPANY PROFILE 2022 .docx.pdf COMPANY PROFILE 2022 .docx.pdf"><button class="btn"><i class="fa fa-download"></i> Download Company Profile</button></a> 
     </div>
 
 </section>
-<!-- abot section ends -->
 
-<!-- service section starts -->
+<!-- service section -->
 <section class="service" id="service">
     <h1>What We Do</h1><br>
     <h6>Mainly we work in 3 areas of practice</h6>
@@ -80,7 +80,7 @@
     <div class="box-container">
 
             <div class="box">
-                <img src="electric.JPG" alt="">
+                <img src="/images/electric.JPG" alt="">
                 <h3>Electrical Installation</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse modi enim impedit vel dignissimos adipisci neque cum est commodi.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse modi enim impedit vel dignissimos adipisci neque cum est commodi.
@@ -90,7 +90,7 @@
             </div>
     
             <div class="box">
-                <img src="mechanical.JPG" alt="">
+                <img src="/images/mechanical.JPG" alt="">
                 <h3>Electro-Mechanical Work</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse modi enim impedit vel dignissimos adipisci neque cum est commodi.
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error esse modi enim impedit vel dignissimos adipisci neque cum est commodi.
@@ -114,29 +114,60 @@
 
 </section>
 
-<!-- service section ends -->
+<!-- team section-->
+<section class="ourTeam" id="team">
+    <div class="team">
+        <h1 class="heading"><span>meet</span>Our Team</h1>
+    
+        <div class="profiles">
+            <div class="profile">
+                <img src="/images/team-1.JPG" class="profile-img">
+                <h3 class="user-name">Teklay Haile</h3>
+                <h5>Creative Director</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p>
+            </div>
+            <div class="profile">
+                <img src="/images/team-2.JPG" class="profile-img">
+    
+                <h3 class="user-name">Yohanes Tolosa</h3>
+                <h5>Managing Partner</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam facilis sint quod.</p>
+            </div>
+            <div class="profile">
+                <img src="/images/team-3.JPG" class="profile-img">
+    
+                <h3 class="user-name">Zekarias Damtew</h3>
+                <h5>Project Manager</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eveniet!</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<!-- contct form starts -->
+<!-- contct section-->
 
-<section class="contactUs" id="contactUs">
-    <div>
-        <h1>Contact Us</h1>
-        <form action="https://formsubmit.co/" method="POST">
+<section class="contactUs" id="contact">
+
+    <div class="title">
+        <h1>Contact Us</h1><br>
+           <p>Please feel free to get in touch to have a chat with us on any of our services or just have coffee. We'll aim to get back to you in 24-48 Hours.</p>
+    </div>
+      
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1498.3357085266719!2d38.835839992161766!3d9.022445347768423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9aa124f5eda9%3A0x3d1a58916528fe5!2sTantos%20Tower!5e0!3m2!1sen!2set!4v1649247915497!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="https://formsubmit.co/9541a986de3e3496851ffd33f9643d73" method="POST">
             <input type="hidden" name="_subject" value="New submission!">
             <input type="text" name="name" class="box" placeholder="name" required>
             <input type="email" name="email" class="box" placeholder="email" required>
             <input type="number" name="number" class="box" placeholder="phone" required>
             <textarea id="" cols="30" rows="10" name="message" class="box message" placeholder="message" required></textarea>
         
-            <input type="submit" class="btn" value="send message">
-        
+            <input type="submit" class="btn" value="Send message">
+
         </form>
-    </div>
 </section>
-<!-- contct form ends -->
 
-<!-- footer section starts  -->
-
+<!-- footer section -->
 <div class="footer">
 
     <div class="box-container">
@@ -146,36 +177,58 @@
             <p>We believe in the value of relationships and we plan to see client relationships like partnership and truly believe that our success is the result of your success.</p>
         </div>
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="index.html">home</a>
-            <a href="#about">about</a>
-            <a href="#service">What We Do</a>
-            <a href="#contactUs">contact</a>
+        <div class="address">
+            <h5>Adrress</h5><br>
+            <p>
+                Ethiopia:
+                  <br>
+                CMC michael-Tantos Tower-2nd floor
+                  <br>
+                Infront of Gust mall
+                  <br>
+                Addis Ababa 
+            </p>
+            
+        </div>
+        <div class="contacts">
+              <h5>Contacts</h5>
+                    <br>
+            <p>tzy0203@gmail.com </p> 
+                     <br>
+            <p>T: +251-911037609</p>
+                    <br>
+            <p>T: +251-912280767</p>
+                    <br>
+            <p>T: +251-912741511</p>
         </div>
 
         <div class="box">
-            <div class="social-icon">
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/tzy-engineering-plc-58311b234"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
-                    <li><a href="https://t.me/TZYEngineering"><i class="fa-brands fa-telegram"></i></a></li>
-                </ul>
-            </div>
+            <h3>Quick links</h3>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">What We Do</a>
+            <a href="#team">Our Team</a>
+            <a href="#contactUs">Contact</a>
         </div>
 
     </div>
 
-
   <a href="#" class="to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
+  <div class="box">
+        <div class="social-icon">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/tzy-engineering-plc-58311b234"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+                <li><a href="https://t.me/TZYEngineering"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </div>
+  </div>
 
     <h1 class="credit">&copy; TZY Engineering PLC</a> | all rights reserved. </h1>
 
 </div>
-
-<!-- footer section ends -->
 
 
 <!-- jquery cdn link  -->
