@@ -260,6 +260,7 @@ h1 {
   font-size: 1.3rem;
   color: #666;
   padding: 1rem;
+  text-align: justify;
 }
 
 .service .box-container .box img {
