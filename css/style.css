@@ -73,7 +73,7 @@ header #menu {
   font-size: 3rem;
   color: #666;
   cursor: pointer;
-  margin: 1rem;
+  margin: 2rem;
   display: none;
 }
 
@@ -83,11 +83,25 @@ header .navbar ul {
   justify-content: center;
   list-style: none;
   background: #444;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 header .navbar .fa {
   margin: 5px;
+}
+
+.navbar-caption-wrap span {
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.navbar-brand .navbar-caption {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 20px;
+  color: rgb(153, 213, 218);
+  font-style: italic;
+  font-size: 3rem;
 }
 
 header .navbar ul li {
@@ -97,15 +111,11 @@ header .navbar ul li {
 header .navbar ul li a {
   font-size: 2rem;
   color: #fff;
+  padding: 20px 20px;
 }
 
 .navbar ul li a:hover {
   color: rgb(233, 78, 78);
-}
-
-.navbar .current {
-  background-color: rgb(119, 177, 204);
-  color: black;
 }
 
 /* home section */
@@ -445,6 +455,10 @@ h1 {
   resize: none;
 }
 
+.map {
+  max-width: 100%;
+}
+
 /* footer section */
 .footer {
   background: #333;
@@ -632,6 +646,20 @@ h1 {
     border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   }
 
+  .navbar-caption-wrap span {
+    font-style: oblique;
+    color: antiquewhite;
+  }
+
+  .navbar-brand .navbar-caption {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 10px;
+    color: rgb(153, 213, 218);
+    font-style: italic;
+    font-size: 3rem;
+  }
+
   header .navbar ul {
     height: 100%;
     width: 100%;
@@ -653,7 +681,7 @@ h1 {
   }
 
   header .navbar ul li a:hover {
-    color: var(--orange);
+    color: var(--blue);
   }
 
   .fa-times {
@@ -666,6 +694,9 @@ h1 {
 
   section {
     padding-top: 5rem;
+  }
+  .contactUs .map iframe {
+    max-width: 100%;
   }
   .footer .box-container {
     text-align: center;
