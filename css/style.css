@@ -1,7 +1,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"); */
 
 :root {
-  --orange: #ff9814;
+  --blue: #68b5da;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 *::selection {
-  background: var(--orange);
+  background: var(--blue);
   color: #fff;
 }
 
@@ -99,7 +99,7 @@ header .navbar ul li a {
   color: #fff;
 }
 
-header .navbar ul li a:hover {
+.navbar ul li a:hover {
   color: rgb(233, 78, 78);
 }
 
@@ -142,6 +142,7 @@ header .navbar ul li a:hover {
   font-size: 1.8rem;
   color: #666;
   padding: 1rem 0;
+  text-align: justify;
 }
 
 /* about section */
