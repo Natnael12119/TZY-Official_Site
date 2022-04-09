@@ -646,19 +646,10 @@ h1 {
     border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   }
 
-  /* .navbar-caption-wrap span {
-    font-style: oblique;
-    color: antiquewhite;
-  }
-
   .navbar-brand .navbar-caption {
-    position: absolute;
     margin-top: 0;
     margin-left: 10px;
-    color: rgb(153, 213, 218);
-    font-style: italic;
-    font-size: 3rem;
-  } */
+  }
 
   header .navbar ul {
     height: 100%;
