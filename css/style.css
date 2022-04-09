@@ -646,7 +646,7 @@ h1 {
     border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   }
 
-  .navbar-caption-wrap span {
+  /* .navbar-caption-wrap span {
     font-style: oblique;
     color: antiquewhite;
   }
@@ -658,7 +658,7 @@ h1 {
     color: rgb(153, 213, 218);
     font-style: italic;
     font-size: 3rem;
-  }
+  } */
 
   header .navbar ul {
     height: 100%;
