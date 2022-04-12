@@ -124,7 +124,6 @@ header .navbar ul li a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -136,7 +135,8 @@ header .navbar ul li a {
 }
 
 .home .image img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .home .content {
@@ -279,6 +279,7 @@ h1 {
   margin: 2rem;
   padding: 1rem;
   width: 10rem;
+  height: auto;
 }
 
 /* our-team section */
