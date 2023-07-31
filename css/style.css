@@ -81,18 +81,19 @@ header .navbar .fa {
   margin: 5px;
 }
 
-.navbar-caption-wrap span {
-  font-style: oblique;
-  color: antiquewhite;
-}
-
-.navbar-brand .navbar-caption {
+.navbar-brand .navbar-logo {
   position: absolute;
-  margin-top: 15px;
-  margin-left: 20px;
+  margin-top: 0px;
+  margin-left: 10px;
   color: rgb(153, 213, 218);
   font-style: italic;
   font-size: 3rem;
+}
+
+.navbar-logo img {
+  margin-top: 0;
+  margin-left: 10px;
+  height: 66px;
 }
 
 header .navbar ul li {
@@ -311,11 +312,6 @@ h1 {
   font-size: 60px;
   color: white;
   padding-top: 10rem;
-}
-
-.heading span {
-  font-style: italic;
-  font-size: 30px;
 }
 
 .profiles {
@@ -647,7 +643,7 @@ h1 {
     border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   }
 
-  .navbar-brand .navbar-caption {
+  .navbar-brand .navbar-logo {
     margin-top: 0;
     margin-left: 10px;
   }
@@ -720,8 +716,10 @@ h1 {
     text-align: center;
   }
 
-  .heading span {
-    font-size: 15px;
+  .navbar-logo img {
+    margin-top: 0;
+    margin-left: 10px;
+    height: 66px;
   }
 
   .profile p {
