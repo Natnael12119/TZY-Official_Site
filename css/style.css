@@ -81,19 +81,11 @@ header .navbar .fa {
   margin: 5px;
 }
 
-.navbar-brand .navbar-logo {
-  position: absolute;
-  margin-top: 0px;
-  margin-left: 10px;
-  color: rgb(153, 213, 218);
-  font-style: italic;
-  font-size: 3rem;
-}
-
-.navbar-logo img {
-  margin-top: 0;
-  margin-left: 10px;
-  height: 66px;
+.logo {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  height: 67px;
 }
 
 header .navbar ul li {
@@ -589,6 +581,10 @@ h1 {
   .about .content h1 {
     font-size: 4rem;
   }
+
+  .logo {
+    position: relative;
+  }
 }
 
 .to-top {
@@ -631,7 +627,7 @@ h1 {
   }
 
   header #menu {
-    display: block;
+    display: inline-block;
   }
 
   header .navbar {
@@ -643,13 +639,8 @@ h1 {
     border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   }
 
-  .navbar-brand .navbar-logo {
-    margin-top: 0;
-    margin-left: 10px;
-  }
-
   header .navbar ul {
-    height: 100%;
+    height: 60%;
     width: 100%;
     flex-flow: column;
     background: #fff;
@@ -663,7 +654,7 @@ h1 {
   }
 
   header .navbar ul li a {
-    font-size: 4rem;
+    font-size: 2rem;
     color: #333;
     display: block;
   }
