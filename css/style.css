@@ -298,12 +298,14 @@ h1 {
 
 .team {
   color: white;
+  padding-bottom: 1rem;
 }
 
 .heading {
   font-size: 60px;
   color: white;
-  padding-top: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .profiles {
@@ -346,7 +348,7 @@ h1 {
 .profile p {
   font-size: 16px;
   margin-top: 20px;
-  text-align: justify-all;
+  text-align: justify;
   color: #444;
 }
 
@@ -375,6 +377,7 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 1rem;
+  padding-top: 3rem;
 }
 
 .contactUs .title {
@@ -582,6 +585,13 @@ h1 {
     font-size: 4rem;
   }
 
+  .profile p {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+    color: #444;
+  }
+
   .logo {
     position: relative;
   }
@@ -696,7 +706,9 @@ h1 {
   .profile p {
     text-align: center;
     margin: 20px 60px 80px 60px;
-    font-size: 20px;
+    padding: auto;
+    font-size: 15px;
+    text-align: justify;
   }
 }
 
